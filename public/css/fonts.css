@@ -1,0 +1,105 @@
+/* Font size */
+
+.headTxt{
+  font-size: 100px;
+}
+.headTxt2{
+  font-size: 110px;
+}
+
+h1{
+  font-size: clamp(3rem,3.5vw,3.75rem);
+}
+
+h2{
+  font-size: clamp(1.65rem,1.8vw,2rem);
+}
+
+h4{
+  font-size: clamp(1.25rem,1.35vw,1.45rem);
+}
+
+p,button{
+  font-size: clamp(0.95rem,1.1vw,1.15rem);
+}
+
+/* Font families */
+.rob-thn {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .rob-lit {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rob-reg {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rob-med {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rob-bldy {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .rob-blk {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .rob-thn-itl {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .rob-lit-itl {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .rob-reg-itl {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .rob-med-itl {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .rob-bldy-itl {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .rob-blk-itl {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .beb {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  

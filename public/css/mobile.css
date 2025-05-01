@@ -1,0 +1,50 @@
+@media screen and (max-width:1000px) {
+
+    .headTxt{
+        font-size: 72px!important;
+    }.headTxt2{
+        font-size: 64px!important;
+    }
+
+    #landpage,#loadpage,#finpage,#imgCont,#imgCont2{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #portfolio{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    #landpage div:not(.circ,#imgCont),#loadpage div:not(.circ),#finpage div:not(.circ),#imgCont div:not(.circ),#imgCont2 div:not(.circ),#portfolio div,#txtCont2,#txtCont2 div:not(#txtCont2 .circ){
+        width: 95%!important;
+    }
+
+    #portCont{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .circ{
+        width: 350px!important;
+        height: 350px!important;
+    }
+
+    #imgCont3 img{
+        width: 100%;
+    }
+
+    #graphDesList{
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+
+    #graphDesList .elem{
+        flex: 1;
+        outline: 1px solid;
+        width: 350px;
+    }
+    
+    
+}

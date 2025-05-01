@@ -1,0 +1,149 @@
+{
+    "skills":[
+        {
+            "name":"CSS",
+            "src":"./skills/css.png",
+            "size":"l"
+        },
+        {
+            "name":"Davinci",
+            "src":"./skills/davin.png",
+            "size":"m"
+        },
+        {
+            "name":"Illustrator",
+            "src":"./skills/illus.png",
+            "size":"l"
+        },
+        {
+            "name":"JavaScript",
+            "src":"./skills/js.png",
+            "size":"l"
+        },
+        {
+            "name":"Photoshop",
+            "src":"./skills/phot.png",
+            "size":"l"
+        },
+        {
+            "name":"Premiere",
+            "src":"./skills/prem.png",
+            "size":"s"
+        },
+        {
+            "name":"React",
+            "src":"./skills/react.png",
+            "size":"m"
+        },
+        {
+            "name":"Sass",
+            "src":"./skills/sass.png",
+            "size":"l"
+        }
+    ],
+    "webs":[
+        {
+            "name": "Virus Alerts",
+            "srcs": [
+                "./portfs/coolvir3/landing1.png",
+                "./portfs/coolvir3/landing2.png",
+                "./portfs/coolvir3/landing3.png",
+                "./portfs/coolvir3/landing4.png"
+            ],
+            "desc": "A funnel page designed to create urgency and prompt users to take action against potential malware. This project demonstrates the use of SVGs and simple animations to enhance user engagement.",
+            "link": "https://pakdu.ako.monster/coolvir/v1/index.html"
+        },
+        {
+            "name": "Reward Sweeps",
+            "srcs": [
+                "./portfs/sweep2/landing1.png",
+                "./portfs/sweep2/landing2.png",
+                "./portfs/sweep2/landing3.png",
+                "./portfs/sweep2/landing4.png",
+                "./portfs/sweep2/landing5.png"
+            ],
+            "desc": "A reward-based landing page that informs users of their eligibility for a loyalty reward. This project highlights the ability to create visually appealing and user-friendly interfaces.",
+            "link": "https://pakdu.ako.monster/newcar/vrs1/index.html"
+        },
+        {
+            "name": "Easter Spinner",
+            "srcs": [
+                "./portfs/spn2/spn1.png",
+                "./portfs/spn2/spn2.png",
+                "./portfs/spn2/spn3.png",
+                "./portfs/spn2/spn4.png"
+            ],
+            "desc": "An interactive Easter-themed spinner game designed to engage users with a fun and festive experience. This project showcases creativity and interactive design skills.",
+            "link": "https://pakdu.ako.monster/estrSpn/ca/popVer/index.html"
+        },
+        {
+            "name": "Candy Spinner",
+            "srcs": [
+                "./portfs/spn1/spn1.png",
+                "./portfs/spn1/spn2.png",
+                "./portfs/spn1/spn3.png",
+                "./portfs/spn1/spn4.png"
+            ],
+            "desc": "A candy-themed spinner game that provides an engaging and playful experience for users. This project demonstrates the ability to create interactive and visually appealing designs.",
+            "link": "https://pakdu.ako.monster/candyspn/vrs1/index.html"
+        }
+    ],
+    "graphdes":[
+        {
+            "name":"Posters",
+            "srcs":[
+                "./portfs/posters/poster1.jpg",
+                "./portfs/posters/poster2.jpg",
+                "./portfs/posters/poster3.jpg",
+                "./portfs/posters/poster4.jpg",
+                "./portfs/posters/poster5.jpg",
+                "./portfs/posters/poster6.jpg",
+                "./portfs/posters/poster7.jpg",
+                "./portfs/posters/poster8.jpg",
+                "./portfs/posters/poster9.jpg"
+            ],
+            "desc": "A collection of poster designs showcasing my skills in visual storytelling and layout design. These were created using Photoshop and enhanced with Illustrator for typography, demonstrating my ability to create impactful designs."
+        },
+        {
+            "name":"Shirts",
+            "srcs":[
+                "./portfs/Shirt/shirt1.jpg",
+                "./portfs/Shirt/shirt2.jpg",
+                "./portfs/Shirt/shirt3.jpg",
+                "./portfs/Shirt/shirt4.jpg",
+                "./portfs/Shirt/shirt5.jpg",
+                "./portfs/Shirt/shirt6.jpg",
+                "./portfs/Shirt/shirt7.jpg",
+                "./portfs/Shirt/shirt8.jpg"
+            ],
+            "desc": "A series of shirt designs I made in my previous job. The designs found here were created through the use of photoshop and illustrator."
+        },
+        {
+            "name":"Illustrations",
+            "srcs":[
+                "./portfs/illus/illus1.jpg",
+                "./portfs/illus/illus2.jpg",
+                "./portfs/illus/illus3.jpg",
+                "./portfs/illus/illus4.jpg",
+                "./portfs/illus/illus5.jpg",
+                "./portfs/illus/illus6.jpg",
+                "./portfs/illus/illus7.jpg",
+                "./portfs/illus/illus8.jpg",
+                "./portfs/illus/illus9.jpg",
+                "./portfs/illus/illus10.jpg",
+                "./portfs/illus/illus11.jpg",
+                "./portfs/illus/illus12.jpg"
+            ],
+            "desc": "A set of illustrations that demonstrate my creativity and proficiency in digital art. These were created using Photoshop for detailed rendering and Illustrator, showcasing my versatility in graphic design."
+        },
+        {
+            "name":"Print",
+            "srcs":[
+                "./portfs/print/print1.jpg",
+                "./portfs/print/print2.jpg",
+                "./portfs/print/print3.jpg"
+            ],
+            "desc": "A collection of print designs that emphasize my skills in layout and typography. Created using Photoshop, these designs reflect my ability to produce high-quality materials for print media."
+        }
+    ]
+}

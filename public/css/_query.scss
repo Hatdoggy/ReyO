@@ -1,0 +1,460 @@
+
+@use 'struct' as str;
+
+
+@media screen and (width <= 1000px) {
+
+    .fishcontainer{
+        width: 30vw!important;
+        height: 30vw!important;
+    }
+
+    #webDesc{
+        width: 100%;
+    }
+    .elem-desc{
+        width: 100%!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .elem-tr{
+        top: 1%!important;
+        right: 1%!important;
+    }
+
+    #showcase .fish1{
+        left: 0!important;
+        top: -100%!important;
+        bottom: 0!important;
+        right: 0!important;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        width: 50%!important;
+    }
+
+    #pageTitle{
+        width: 100%!important;
+    }
+
+    #skillstxt{
+        width: 100%!important;
+    }
+
+    #showCont{
+        justify-content: center;
+
+        #IntroImg{
+            width: 95%!important;
+            .img-box{
+                width: 50px!important;
+                height: 50px!important;
+            }
+        }
+    }
+
+    section{
+        div{
+            h1,h2,h3,h4,h5,p,small{
+                width: 95%!important;
+            }
+        }
+    }
+
+    #reviewcont{
+        .bg-orgdesc{
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+
+    #portfFish{
+        img{
+            width: calc(80vw - 30px)!important;
+        }
+        #btnsCont{
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            .btn{
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    #pop{
+        img{
+            width: 100%!important;
+        }
+        .container{
+            width: 95%!important;
+        }
+    }
+
+    #introTxt{
+        padding: 20px;
+        flex-direction: column;
+        #introMes,#IntroImg{
+            width: 100%;
+        }
+    }
+
+    .headTxt{
+        font-size: 48px!important;
+    }.headTxt2{
+        font-size: 64px!important;
+    }
+
+    #landpage,#loadpage,#finpage,#imgCont,#imgCont2{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #portfolio{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    #landpage div:not(.circ,#imgCont),#loadpage div:not(.circ),#finpage div:not(.circ),#imgCont div:not(.circ),#imgCont2 div:not(.circ),#portfolio div:not(#portCont),#txtCont2,#txtCont2 div:not(#txtCont2 .circ){
+        width: 100%!important;
+    }
+
+    #portCont{
+        margin: 0;
+        padding: 10px;
+        width: 100%!important;
+        align-items: center!important;
+    }
+
+    .circ{
+        width: 350px!important;
+        height: 350px!important;
+    }
+
+    #imgCont3 img{
+        width: 100%;
+        margin-top: 0!important;
+        object-fit: cover;
+    }
+
+    #graphDesList{
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+
+    #graphDesList .elem{
+        flex: 1;
+        outline: 1px solid;
+        width: 350px;
+    }
+    
+    .crcs{
+        padding: 0!important;
+        &.s{
+          width: 15vw!important;
+          height: 15vw!important;
+        }
+        &.m{
+          width: 18.5vw!important;
+          height: 18.5vw!important;
+        }
+        &.l{
+          width: 20vw!important;
+          height: 20vw!important;
+        }
+        img{
+            width: 85%!important;
+        }
+    }
+
+    .skillsFish{
+      width: 90%!important;
+    }.excl{
+        left: 5% !important;
+        top: 25%;
+        img{
+            width: 40%;
+        }
+        small{
+            text-align: center!important;
+            margin-top: 2%!important;
+        }
+    }
+
+    #vertNav{
+        .vnav{
+            small{
+                font-size: 14px!important;
+            }
+        }
+    }
+}
+
+@media only screen 
+  and (600px >= width) 
+  and (orientation: portrait) {
+        
+    #focusImg{
+        &.illustrations,&.print,&.shirts{
+            width: 95%!important;
+        }
+        &.posters{
+            width: auto!important;
+        }
+        &.virus,&.reward,&.easter,&.candy{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+          }
+    }
+.portf{
+    border-radius: 15px;
+    position: absolute;
+    opacity:0;
+    y:1500px;
+  
+    border:8px solid #FF7D36;
+  
+    &.grph.tl{
+      width: 70%!important;
+      top:0%!important;
+      left: -5%!important;
+    }
+    &.grph.tr{
+        top: 30%!important;
+        right: -5%!important;
+        width: 65%!important;
+    }
+    &.grph.bl{
+        bottom: 15%!important;
+        left: 0!important;
+        width: 70%!important;
+        transform: rotate(-15deg)!important;
+    }
+    &.grph.br{
+        right: 0!important;
+        width: 60%!important;
+        bottom: 5%!important;
+        transform: rotate(10deg)!important;
+    }
+  
+    &.web.tl{
+      width: 85%!important;
+      top: 5%!important;
+      left: -5%!important;
+    }
+  
+    &.web.tr{
+      width: 80%!important;
+      top: 30%!important;
+      right: -5%!important;
+    }
+  
+    &.web.bl{
+      width: 80%!important;
+      bottom: 30%!important;
+      left: -5%!important;
+    }
+  
+    &.web.br{
+      width: 85%!important;
+      right: -5%!important;
+      bottom: 5%!important;
+    }
+  
+    &:hover{
+      cursor: pointer;
+      box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.5);
+      opacity:1;
+    }
+  
+  }
+}
+
+@media only screen 
+  and (800px >= width) 
+  and (orientation: landscape) {
+    #focusImg{
+        &.illustrations,&.print,&.shirts{
+            width: 40vw!important;
+        }
+        &.posters{
+            width: 30%!important;
+            height: 250px!important;
+            max-height: 250px!important;
+        }
+    }
+
+    #showcase .fish1{
+        left: 0!important;
+        top: -100%!important;
+        bottom: 0!important;
+        right: 0!important;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        width: 30%!important;
+    }
+
+    #portfFish{
+        img{
+            width: 30vw!important;
+        }
+        #btnsCont{
+            .btn{
+                width: 70%!important;
+            }
+        }
+    }
+
+    .portf{
+        border-radius: 15px;
+        position: absolute;
+        opacity:0;
+        y:1500px;
+      
+        border:8px solid #FF7D36;
+      
+        &.grph.tl{
+          width: 70%!important;
+          top:0%!important;
+          left: -5%!important;
+        }
+        &.grph.tr{
+            top: 30%!important;
+            right: -5%!important;
+            width: 65%!important;
+        }
+        &.grph.bl{
+            bottom: 15%!important;
+            left: 0!important;
+            width: 70%!important;
+            transform: rotate(-15deg)!important;
+        }
+        &.grph.br{
+            right: 0!important;
+            width: 60%!important;
+            bottom: 5%!important;
+            transform: rotate(10deg)!important;
+        }
+      
+        &.web.tl{
+          width: 85%!important;
+          top: 5%!important;
+          left: -5%!important;
+        }
+      
+        &.web.tr{
+          width: 80%!important;
+          top: 30%!important;
+          right: -5%!important;
+        }
+      
+        &.web.bl{
+          width: 80%!important;
+          bottom: 30%!important;
+          left: -5%!important;
+        }
+      
+        &.web.br{
+          width: 85%!important;
+          right: -5%!important;
+          bottom: 5%!important;
+        }
+      
+      }
+}
+
+/* Portrait IPAD */
+@media only screen 
+  and (601px <= width <= 1024px)  
+  and (orientation: portrait) {
+
+    .headTxt{
+        font-size: 84px!important;
+    }.headTxt2{
+        font-size: 48px!important;
+    }
+
+    #portfFish{
+        img{
+            width: 50vw!important;
+        }
+        #btnsCont{
+            .btn{
+                width: 70%!important;
+            }
+        }
+    }
+
+    .portf{
+        border-radius: 15px;
+        position: absolute;
+        opacity:0;
+        y:1500px;
+      
+        border:8px solid #FF7D36;
+      
+        &.grph.tl{
+          width: 50%!important;
+          top:5%!important;
+          left: 5%!important;
+        }
+        &.grph.tr{
+            top: 30%!important;
+            right: 5%!important;
+            width: 45%!important;
+        }
+        &.grph.bl{
+            bottom: 15%!important;
+            left: 5%!important;
+            width:45%!important;
+            transform: rotate(-15deg)!important;
+        }
+        &.grph.br{
+            right: 0!important;
+            width: 50%!important;
+            bottom: 10%!important;
+            transform: rotate(10deg)!important;
+        }
+      
+        &.web.tl{
+          width: 85%!important;
+          top: 5%!important;
+          left: -5%!important;
+        }
+      
+        &.web.tr{
+          width: 80%!important;
+          top: 30%!important;
+          right: -5%!important;
+        }
+      
+        &.web.bl{
+          width: 80%!important;
+          bottom: 30%!important;
+          left: -5%!important;
+        }
+      
+        &.web.br{
+          width: 85%!important;
+          right: -5%!important;
+          bottom: 5%!important;
+        }
+      
+      }
+}
+
+@media only screen 
+  and (601px <= width <= 1366px) 
+  and (orientation: landscape) {
+    
+}

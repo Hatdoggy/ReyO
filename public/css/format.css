@@ -1,0 +1,185 @@
+/* Defaults */
+
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+button{
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+}
+
+main{
+    scroll-snap-type: mandatory;
+    overflow-x: hidden;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+/* Extras */
+.flip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* Displays */
+
+.flx{
+    display: flex;
+}
+
+#landpage,#loadpage,#finpage,#imgCont,#imgCont2{
+    display: flex;
+}
+
+#imgCont3 div{
+    margin-top: auto;
+}
+
+.flxrow{
+    flex-direction: row;
+}.flxcol{
+    flex-direction: column;
+}
+
+.ai-c{
+    align-items: center;
+}.jc-c{
+    justify-content: center;
+}
+
+.mid{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Format Width - Height and more */
+
+.h-vh{
+    height: 100vh;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.h-50{
+    height: 50%;
+}
+
+.w-vw{
+    width: 100vw;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-10{
+    width: 10%;
+}
+
+/* Text Colors */
+.txt-org{
+    color: #FF7D36;
+}
+
+.txt-drk{
+    color: #222222;
+}
+
+.txt-wht{
+    color: #ffffff;
+}
+
+/* Background */
+.bg-org{
+    background-color: #FF7D36;
+}
+
+.bg-drk{
+    background-color: #222222;
+}
+
+/* Positioning */
+.m-l-auto{
+    margin-left: auto;
+}
+.m-r-auto{
+    margin-right: auto;
+}
+.m-t-auto{
+    margin-top: auto;
+}
+.m-b-auto{
+    margin-bottom: auto;
+}
+
+.pos-abs{
+    position: absolute;
+}.pos-rel{
+    position: relative;
+}
+
+
+.m-t-5{
+    margin-top: 5%;
+}
+.m-t-2{
+    margin-top: 2%;
+}
+
+/* Text Positioning */
+.txt-ce{
+    text-align: center;
+}.txt-r{
+    text-align: right;
+}
+
+/* Button formats */
+.btn{
+    padding: 15px;
+    margin-top: 2%;
+    width: 50%;
+    transition: .5s ease-in-out;
+}.btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn-org{
+    background-color: #FF7D36;
+    color: #ffffff;
+}

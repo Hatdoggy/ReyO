@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Paytone+One&display=swap');
+
+$pay: "Paytone One", sans-serif;
+$gud:"Gudea", sans-serif;
+$wht: rgba(255, 255, 255, 1);
+$drk:#222222;
+$grad: linear-gradient(180deg, #FEF4E6 0%, #CFC1B0 100%);
+$pop:rgba(0, 0, 0, 0.65);
+$lght:#FFE0A4;
+$ylw:#070707;
+$trans:rgba(255, 255, 255, 0.20);
+$blu:#0071DC;
+$grn:#56E3A0;
+$vio:#75168E;
+$org:#FB6918;
+$scn:rgb(197, 235, 255);
+
+/* text */
+
+.txt {
+    &-al {
+      &-ce {
+        text-align: center;
+      }
+      &-r {
+        text-align: right;
+      }
+      &-l {
+        text-align: left!important;
+      }
+      &-j {
+        text-align: justify;
+      }
+    }
+    &-lght{
+      color:$lght;
+    }
+    &-wht {
+      color: $wht;
+    }
+    &-drk{
+      color: $drk;
+    }
+    &-org{
+      color: $org;
+    }
+  }
+
+  /* button*/
+.btn {
+    padding: 20px;
+    margin-top: 2%;
+    width: 50%;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+    font-size: 24px;
+    &-trans{
+      background-color: transparent;
+      border: 1px solid $drk;
+      color: $drk;
+      &:hover{
+        background-color: $drk;
+      }
+    }
+    &-org{
+      background-color: $org;
+      color: $wht;
+      &:hover{
+        background-color: $drk;
+        color: $org;
+      }
+    }
+    &-org2{
+      background-color: $org;
+      color: $wht;
+      padding: 10px!important;
+      font-size: 14px!important;
+      &:hover{
+        background-color: $drk;
+        color: $org;
+      }
+    }
+    &-wht{
+      background-color: $wht;
+      color: $drk;
+    }
+    &-drk{
+      background-color: $drk;
+      color: $wht;
+    }
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+  
+
+  
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(219, 184, 44, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(219, 184, 44, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(219, 184, 44, 0);
+	}
+}
+@keyframes pulse2 {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(219, 184, 44, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(219, 184, 44, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(219, 184, 44, 0);
+	}
+}
+@keyframes pulse3 {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(219, 184, 44, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(219, 184, 44, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(219, 184, 44, 0);
+	}
+}
+  
+  .cursor{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .pay{
+    font-family: $pay;
+  }
+  .gud{
+    font-family: $gud;
+    &.blk{
+      font-weight: 900;
+    }
+    &.bld{
+      font-weight: 700;
+    }
+    &.med{
+      font-weight: 500;
+    }
+    &.reg{
+      font-weight: 400;
+    }
+    &.thn{
+      font-weight: 300;
+    }
+  }

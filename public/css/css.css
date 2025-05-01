@@ -1,0 +1,166 @@
+main{
+    position: relative;
+}
+
+.circ{
+    width: 800px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+#portCont{
+    overflow: hidden;
+    align-content: center;
+}
+
+#portCont.full{
+    height: 100%;
+    padding: 20px;
+}
+
+#portCont.full #graphNav{
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#portCont.full h1, #portCont.full p{
+    text-align: center;
+}
+
+#imgCont .circ img{
+    width: 110%;
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+}
+
+#txtCont2 .circ{
+    margin: 0;
+    margin-right: auto;
+    width: 360px;
+    height: 360px;
+}
+
+#txtCont2 .circ img{
+    width:100%;
+    position: absolute;
+    left: -15%;
+    bottom: -10%;
+}
+
+#loading{
+    top:0;
+    position: fixed;
+    z-index: 55;
+    opacity:0; 
+}
+
+.hov{
+    transition: .2s ease-in-out;
+}
+.hov:hover{
+    transform: scale(1.1);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* GraphDes - Dekstop */
+#graphDesList{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+#graphDesList .elem{
+    flex: 0 0 33%;
+    outline: 1px solid;
+}
+
+.navIcon{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    transition: .5s ease-in-out;
+}
+
+.navIcon::after{
+    height: 2px;
+    width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    opacity:0,
+}
+.navIcon:hover{
+    cursor: pointer;
+}
+
+.navIcon:hover:after{
+    width: 30%;
+    opacity:1,
+}
+
+.navIcon.actv::after{
+    width: 30%;
+    opacity:1,
+}
+
+.navIcon:nth-child(even){
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.actv p{
+    color: #fff;
+}
+
+
+#webDevList{
+    display: flex;
+    overflow-x:scroll ;
+}
+
+.webelem{
+    margin-right: 1%;
+}
+
+.webelem img{
+    width: 800px;
+}
+
+/* Animation */
+
+.randomshake{
+    animation: randomshake 1s ease-in-out infinite;
+    animation-delay: .85s;
+}
+
+@keyframes randomshake{
+    50% {
+        transform: rotate('45deg');
+    }
+}
+
+.jumpload{
+    animation: jumpload 1s ease-in-out infinite;
+}
+
+@keyframes jumpload{
+    50% {
+        transform: translateY(-25px);
+    }
+}

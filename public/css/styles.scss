@@ -1,0 +1,684 @@
+
+@use 'helpers' as *;
+
+.headTxt{
+  font-size: 100px;
+}
+.headTxt2{
+  font-size: 110px;
+}
+
+h1{
+  font-size: clamp(2.5rem,3vw,3.5rem);
+}
+
+h2{
+  font-size: clamp(1.5rem,1.75vw,2rem);
+}
+
+h4{
+  font-size: clamp(1.15rem,1.25vw,1.45rem);
+}
+
+p,button{
+  font-size: clamp(0.95rem,1.1vw,1.15rem);
+}
+
+.elem{
+  &-tl{
+    @include position(top,left,-10%,-10%);
+    z-index: -1;
+    width: 20%;
+  }
+  &-tr{
+    @include position(top,right,4%,2%);
+  }
+  &-br{
+    @include position(bottom,right,-50%,-25%);
+  }
+  &-bl{
+    @include position(bottom,left,-5%,0);
+  }
+  &-b{
+    @include position(bottom,0,-0,0);
+  }
+  &-top{
+    @include position(top,0,0,0);
+  }
+  &-logo{
+    @include position(top,left,0,0);
+  }
+  &-desc{
+    @include position(bottom,right,0,0);
+  }
+}
+
+// Bounce animation
+.one {
+  animation: loading-bounce 1s ease-in-out infinite;
+}
+
+.two {
+  animation: loading-bounce 1s .33s ease-in-out infinite;
+}
+
+.three {
+  animation: loading-bounce 1s -.33s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+  50% {
+      transform: translateY(-10px);
+      opacity: 1;
+  }
+}
+
+// Specific css
+
+main{
+  position: relative;
+}
+
+.circ{
+  width: 800px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+#portCont{
+  overflow: hidden;
+  align-content: center;
+}
+
+#portCont.full{
+  height: 100%;
+  padding: 20px;
+}
+
+#portCont.full #graphNav{
+  justify-content: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#portCont.full h1, #portCont.full p{
+  text-align: center;
+}
+
+#imgCont .circ img{
+  width: 110%;
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+}
+
+#txtCont2 .circ{
+  margin: 0;
+  margin-right: auto;
+  width: 360px;
+  height: 360px;
+}
+
+#txtCont2 .circ img{
+  width:100%;
+  position: absolute;
+  left: -15%;
+  bottom: -10%;
+}
+
+#loading{
+  top:0;
+  position: fixed;
+  z-index: 55;
+  opacity:0; 
+}
+
+.hov{
+  transition: .2s ease-in-out;
+}
+.hov:hover{
+  transform: scale(1.1);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* GraphDes - Dekstop */
+#graphDesList{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+
+#graphDesList .elem{
+  flex: 0 0 33%;
+  outline: 1px solid;
+  border-radius: 15px;
+  margin: 2px;
+}
+
+/* WebPortf - Dekstop */
+#wedDevList{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+
+#wedDevList h1{
+  flex: 50%;
+  font-size: clamp(3.5rem,4.5rem,5.5rem);
+}
+
+.navIcon{
+  width:fit-content;
+  padding: 10px;
+  background-color: #000;
+  position: relative;
+  align-items: center;
+  transition: .25s ease-in-out;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  &:hover{
+    background-color: #fff;
+    p{
+      color: #FF7D36;
+    }
+  }
+  &.actv{
+    background-color: #fff;
+    p{
+      color: #FF7D36;
+    }
+  }
+}
+#navigation{
+  right: 0;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  opacity:0,
+}
+
+
+#webDevList{
+  display: flex;
+  overflow-x:scroll ;
+}
+
+.webelem{
+  margin-right: 1%;
+}
+
+.webelem img{
+  width: 800px;
+}
+
+.skillsFish{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Animation */
+
+.randomshake{
+  animation: randomshake 1s ease-in-out infinite;
+  animation-delay: .85s;
+}
+
+@keyframes randomshake{
+  50% {
+      transform: rotate('45deg');
+  }
+}
+
+.jumpload{
+  animation: jumpload 1s ease-in-out infinite;
+}
+
+@keyframes jumpload{
+  50% {
+      transform: translateY(-25px);
+  }
+}
+
+.headTxt{
+  font-size: 128px;
+}
+.title{
+  font-size: 32px;
+}
+
+#skillsCont{
+  z-index: 0;
+}
+
+.excl,.instr{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: auto;
+  z-index: 5; /* Ensure it's above other elements */
+}.excl{
+  left: 35%;
+}.instr{
+  left: 35%;
+  top: 30%;
+}
+
+.shaking{
+  animation: shake 0.3s infinite;
+}
+
+.animText{
+  opacity:0;
+  &.spc{
+    margin: 5px;
+  } 
+}
+
+#introMes .headTxt{
+  width: 50%;
+}
+
+@keyframes shake{
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% { 
+    transform: rotate(-5deg);
+  }
+  100% { 
+    transform: rotate(0deg); 
+  }
+}
+
+#skillstxt{
+  opacity:0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.crcs{
+  opacity:0;
+  border-radius: 100%;
+  padding: 15px;
+  background-color: #FF7D36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  z-index: -1;
+  &.s{
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  &.m{
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  &.l{
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  img{
+    object-fit: contain;
+    width: 100%;
+    transition: .5s ease-in-out;
+    
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.portf{
+  border-radius: 15px;
+  position: absolute;
+  opacity:0;
+  y:1500px;
+
+  border:8px solid #FF7D36;
+
+  &.grph{
+    width: 30%;
+    opacity:.75;
+  }
+
+  &.grph.tl{
+    width: 20%;
+  }
+  &.grph.bl{
+    width: 20%;
+    transform: rotate(25deg);
+  }
+  
+  &.tl{
+    top: 5%;
+    left: 5%;
+    transform: rotate(-15deg);
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+  }
+  &.tr{
+    top: 20%;
+    right: 5%;
+    transform: rotate(15deg);
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+  }
+  &.br{
+    bottom: 5%;
+    right: 15%;
+    transform: rotate(-5deg);
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+  }
+  &.bl{
+    bottom: 10%;
+    left: 15%;
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+  }
+
+  &.web.tl{
+    width: 40%;
+  }
+
+  &.web.tr{
+    width: 45%;
+    top: 20%;
+    right: 5%;
+    transform: rotate(15deg);
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+  }
+
+  &.web.bl{
+    width: 45%;
+    bottom: 5%;
+    left: 2%;
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+  }
+
+  &.web.br{
+    width: 40%;
+    bottom: 5%;
+    right: 10%;
+    transform: rotate(-5deg);
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.31);
+  }
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: -1px 10px 39px -3px rgba(0,0,0,0.5);
+    opacity:1;
+  }
+
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+// Showcase fish positioning
+
+#showcase{
+  /* The fish in mobile or ipad should be placed below the text at a slight rotate looking at the text */
+  /* Title page should drop down staggered from left to right */
+  
+  .fish{
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+  }
+
+  .fish1{
+    left: -50%;
+    bottom: 0;
+    top: 0;
+  }
+}
+
+#vertNav{
+  position: fixed;
+  right: 0;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+
+.vnav{
+  width: auto;
+  height: fit-content;
+  transform: rotate(270deg);
+  background-color: #222222;
+  color: #fff;
+  margin-bottom: 5px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+
+  &.actv{
+    background-color: #FF7D36;
+    color: #222222;
+  }
+}
+
+main{
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(300px);
+  scroll-snap-type: y mandatory;
+  section{
+    scroll-snap-align: start;
+  }
+}
+
+.exit{
+  transition: .5s ease-in-out;
+  color: #fff;
+  &:hover{
+    cursor: pointer;
+    color: #FF7D36;
+  }
+}
+
+#portfFish{
+  display: flex;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  img{
+    width: 30%;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+#IntroImg {
+  display: flex; /* Enables flex layout for horizontal alignment */
+  overflow-x: auto; /* Allows horizontal scrolling */
+  gap: 20px; /* Adds spacing between images */
+  width: 50%; /* Ensures the container spans the full width */
+  padding: 10px; /* Optional: Adds padding around the container */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+
+  .img-box {
+    flex: 0 0 auto; /* Prevents shrinking and ensures each image takes its full width */
+    width: 150px; /* Set a fixed width for each image box */
+    height: 150px; /* Set a fixed height for each image box */
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image fits within the box */
+      border-radius: 10px; /* Optional: Adds rounded corners to images */
+    }
+  }
+}
+
+// Focus image section - should have specific width and height depending on the type of image shown
+#focusImg{
+
+  &.posters{
+    width: auto;
+    height: 650px;
+  }
+
+  &.shirts{
+    width: 650px;
+  }
+  
+  &.illustrations,&.print{
+    width: 600px;
+  }
+
+  &.virus,&.reward,&.easter,&.candy{
+    width: 80%;
+    img{
+      width: 80%;
+      border-radius: 15px;
+    }
+  }
+
+  img{
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+.img-box{
+  &.illustrations{
+    width: 360px;
+    height: 300px;
+  }
+  img{
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+
+.fishcontainer{
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  img {
+    width: 100%;
+    object-fit: contain;
+    transition: 0.5s ease-in-out;
+  }
+
+  &::after {
+    content: ''; /* Ensure content is set */
+    font-family: "Gudea", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: -2%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ff7d36;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    z-index: 2;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.204);
+  }
+  &.ang::after {
+    content: 'GRR'; /* Add content for angry */
+    color: #ff7d36;
+  }
+
+  &.hap::after {
+    content: 'I LOVE IT!'; /* Add content for happy */
+    color: #ff7d36;
+  }
+
+  &.sad::after {
+    content: 'It was aight'; /* Add content for sad */
+    color: #ff7d36;
+  }
+
+
+
+  &:hover {
+    cursor: pointer;
+
+    &::after {
+      opacity: 1;
+    }
+    
+    img {
+      transform: translateY(-15px);
+
+    }
+  }
+}
